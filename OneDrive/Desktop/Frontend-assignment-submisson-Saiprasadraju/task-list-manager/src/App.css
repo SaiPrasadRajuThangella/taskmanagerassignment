@@ -1,0 +1,96 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  input{
+    padding: 5px
+  };
+  select{
+    text-align: center;
+  }
+  button {
+    background-color: blue !important;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+.editing {
+  background-color: #8dbee9; 
+  transition: background-color 0.1s ease-in-out; 
+}
+
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+  
+  width: 250px;
+  overflow-wrap: anywhere;
+}
+table td:nth-child(4) {
+  width: 100px;
+}
+table td:nth-child(5) {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  gap: 5px;
+  button {
+    background-color: #cacaca !important;
+    cursor: pointer;
+    margin: 1px;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    border: 1px solid #868686;
+  }
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.task-table th {
+  background: #f0f0f0;
+}
+
+.filter-tasks {
+  margin-bottom: 20px;
+  padding: 1.5rem;
+}
